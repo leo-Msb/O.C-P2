@@ -6,15 +6,18 @@
     box-sizing: border-box;
     font-family: "Raleway", "sans-serif";
     color: black;
-  }
+}
 
+body {
+    margin-right: 50px;
+}
 
 /* Header et Navbar */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1400px;
+    width: 100%;
     height: 100px;
     margin-top: 44px;
     margin-left: 55px;
@@ -32,32 +35,40 @@ nav {
     align-items: center;
     justify-content: space-around;
     text-decoration: none;
-    font-family: 'Raleway';
-    width: 381px;
-    height: 19px;
-    margin-right: 77px;
-    color: black;
+    width: 27.14%;
+    height: 100px;
 }
 
 nav a:hover {
-    border-top-color: #0065fc;
-  }
+    padding-top: 15px;
+    border-top-width: 160px;
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+}
 
-#hébergements a {
-    font-size: 19px;
+#actnav a,
+#hébergnav a {
+    display: flex;
+    align-items: center;
+    height: 180px;
+    width: 180px;
+    justify-content: center;
+}
+
+#hébergnav,
+#actnav {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
     text-decoration: none;
     font-style: normal;
-    font-weight: 400;
-    width: 113px;
-    height: 16px;
+    font-weight: 500;
 }
 
-a[href="activités"] {
-    font-size: 19px;
-    text-decoration: none;
-    width: 63px;
-    height: 19px;
+#actnav{
+    margin-right: 70px;
 }
+
 
 /* Section intermédiaire avec formulaire et filtres */
 h1 {
@@ -72,7 +83,7 @@ h1 {
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: 400;
-} 
+}
 
 /* Formulaire */
 form {
@@ -104,13 +115,15 @@ input {
     height: 49px;
     box-sizing: border-box;
     border: 1px solid #F2F2F2;
+    font-size: 18px;
+    font-weight: 700;
 }
 
 button {
     height: 49px;
     width: 132px;
     background-color: #0065FC;
-    border: 1px solid #F2F2F2 ;
+    border: 1px solid #F2F2F2;
     border-radius: 0px 15px 15px 0px;
     color: #ffffff;
     font-size: 18px;
@@ -120,15 +133,15 @@ button {
 /* Filtre */
 #filtres {
     display: flex;
-    justify-content: baseline;
-    width: 914px;
+    max-width: 914px;
+    width: 85%;
     height: 50px;
     margin-left: 62px;
     margin-top: 32px;
     font-weight: 700;
     color: black;
 }
-  
+
 
 h2 {
     display: flex;
@@ -141,10 +154,11 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 914px;
+    max-width: 90%;
     list-style-type: none;
     font-size: 17px;
     font-weight: 700;
+    margin-right: 50px;
 }
 
 #economique {
@@ -159,7 +173,7 @@ ul {
     font-weight: 700;
 }
 
-#familial{
+#familial {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -189,15 +203,25 @@ ul {
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    margin-right: 50px;
 }
 
-#filtres i{
+#filtres i {
     color: #0065FC;
 }
 
+ul #economique:hover,
+#familial:hover,
+#romantique:hover,
+#animaux:hover {
+    background-color: #DEEBFF;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* info */
-#info{
+#info {
     display: flex;
     align-items: center;
     width: 580px;
@@ -206,7 +230,7 @@ ul {
     font-size: 16px;
 }
 
-#iconInfo{
+#iconInfo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -233,12 +257,14 @@ ul {
 
 #cardBlock {
     display: grid;
-    grid-template-columns: 246px 246px 246px;
+    grid-template-columns: 30.32% 30.32% 30.32%;
     gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 #cardConteiners {
-    width: 880px;
+    width: 69%;
     height: 626px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -246,13 +272,13 @@ ul {
     padding: 40px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 #card {
     display: flex;
     flex-direction: column;
-    width: 246px;
+    width: 100%;
     height: 199px;
     border: 3px solid #FFFFFF;
     border-radius: 20px;
@@ -271,6 +297,7 @@ ul {
 #cardInfo {
     margin-left: 16px;
     align-items: center;
+    height: 37%;
 }
 
 #cardInfo h3 {
@@ -281,30 +308,27 @@ ul {
 
 #cardInfo p {
     font-size: 14px;
-    margin: 5px 0px ;
-    
+    margin-top: 5px;
+
 }
 
 #cardInfo i {
     color: #0065FC;
+    font-size: 12px;
 }
 
-#note {
-    height: 12px;
-}
 
 #cardConteiners a {
     font-size: 18px;
     font-weight: 700;
-    margin-left: 4px;
-    margin-top: 40px;
+
     text-decoration: none;
 }
 
 /* Les plus populaires */
 
 #populaires {
-    width: 420px;
+    width: 33.4%;
     height: 625px;
     background-color: #F2F2F2;
     border-radius: 20px;
@@ -316,8 +340,9 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 560px;
-    padding-bottom: 34px;
+    height: 498px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 #titlePop {
@@ -331,10 +356,9 @@ ul {
 }
 
 #card2 {
+    width: 100%;
     display: flex;
-
-    width: 343px;
-    height: 144px;
+    height: 30.32%;
     border: 3px solid #FFFFFF;
     border-radius: 20px;
     margin-top: 23px;
@@ -342,9 +366,13 @@ ul {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
+#card2 a{
+    display: flex;
+}
+
 #card2 img {
     object-fit: cover;
-    width: 137px;
+    width: 40%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
 }
@@ -354,7 +382,8 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    height: 144px;
+    width: 60%;
+    height: 140px;
 }
 
 #cardInfoPop h3 {
@@ -375,6 +404,7 @@ ul {
 #notePop {
     height: 12px;
     margin-bottom: 12px;
+    font-size: 12px;
 }
 
 #infoPop {
@@ -392,18 +422,67 @@ ul {
     justify-content: space-around;
 }
 
+/* Activités à Marseille */
 
+#activités {
+    width: 100%;
+    height: 493px;
+    margin-left: 50px;
+    margin-right: 53px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
+#actTitle {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#actCardConteiner {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+#actCard {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 444px;
+    border: 0px solid #FFFFFF;
+    border-radius: 20px;
+    margin-top: 23px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+#actCard img {
+    object-fit: cover;
+    width: 100%;
+    height: 87%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#actCardInfo {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 19px;
+}
+
+#actCardInfo h3{
+height: 56px;
+}
 
 
 /* Footer */
 
 #footer {
     height: 225px;
-    width: 100%;
+    width: 96.5%;
     background-color: #F2F2F2;
     margin-left: 48px;
-    margin-right: 53px;
     display: flex;
     justify-content: space-around;
     padding: 45px;
@@ -424,3 +503,5 @@ ul {
     font-size: 16px;
     text-decoration: none;
 }
+
+
