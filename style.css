@@ -130,11 +130,15 @@ button {
     font-weight: 700;
 }
 
+button i{
+    visibility: hidden;
+}
+
 /* Filtre */
 #filtres {
     display: flex;
     max-width: 914px;
-    width: 85%;
+    width: 90%;
     height: 50px;
     margin-left: 62px;
     margin-top: 32px;
@@ -165,7 +169,8 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 170px;
+    width: 20.69%;
+    min-width: 142px;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -177,7 +182,7 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 130px;
+    width: 110px;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -188,7 +193,8 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 170px;
+    width: 20.69%;
+    min-width: 142px;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -199,7 +205,8 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 226px;
+    width: 29.93%;
+    min-width: 200px;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -279,6 +286,7 @@ a {
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 200px;
     height: 199px;
     border: 3px solid #FFFFFF;
     border-radius: 20px;
@@ -308,6 +316,7 @@ a {
 
 #cardInfo p {
     font-size: 14px;
+    font-weight: 400;
     margin-top: 5px;
 
 }
@@ -357,6 +366,7 @@ a {
 
 #card2 {
     width: 100%;
+    min-width: 290px;
     display: flex;
     height: 30.32%;
     border: 3px solid #FFFFFF;
@@ -464,15 +474,20 @@ a {
 }
 
 #actCardInfo {
-    display: flex;
-    align-items: center;
     font-size: 16px;
     font-weight: 700;
     padding-left: 19px;
 }
 
 #actCardInfo h3{
-height: 56px;
+height: 48px;
+display: flex;
+align-items: center;
+}
+
+#actCard a{
+    
+    height: 100%;
 }
 
 
@@ -505,3 +520,416 @@ height: 56px;
 }
 
 
+/* Media queries */
+
+@media screen and (max-width:992px) {
+
+    /* haut de page */
+
+    header{
+        margin-left: 72px;
+        margin-right: 72px;
+        width: 94%;
+    }
+
+    h1{
+        margin-left: 70px;
+    }
+
+    #start{
+        margin-left: 20px;
+    }
+
+
+    /* Section */
+
+    section{
+        margin-left: 18px;
+    }
+    
+    #filtres{
+        width: 90%;
+        margin-left: 52px;
+    }
+
+    #filtres h2{
+        margin-right: 12px;
+    }
+
+    #filtres ul{
+        width: 100%;
+    }
+
+    #economique, #familial, #romantique, #animaux{
+        margin-right: 2.5%;
+    }
+
+    #familial{
+    min-width: 98px;
+    }
+
+    /* Block Cards hébergement */
+
+    #bigBlockCards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* hébergement */
+    #cardConteiners{
+        width: 90%;
+        margin: 0px 70px;
+    }
+
+    #cardInfo h3{
+        font-size: 14px;
+    }
+
+    #cardInfo p{
+        font-size: 13px;
+    }
+
+    /* Populaire */
+
+    #populaires{
+        width: 90%;
+        height: 278px;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 53px;
+    }
+
+    #titlePop{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 34px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    #mostPop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        height: 210px;
+    }
+
+    #card2{
+        min-width: 130px;
+        height: 138px;
+        margin: 0px;
+    }
+
+    #card2 img{
+        width: 42%;
+    }
+
+    #infoPop h3{
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    #infoPop p{
+        font-size: 13px;
+    }
+
+    /* Block activités */
+
+    #activités{
+        height: 380px;
+        margin-top: 55px;
+        margin-bottom: 40px;
+        margin-left: 70px;
+    }
+
+    #actCardConteiner{
+        height: 301px;
+        width: 90%;
+    }
+
+    #actCard{
+        height: 267px;
+    }
+
+    #actCardInfo{
+        padding-left: 12px;
+    }
+
+    #actCard img{
+        height: 79%;
+    }
+
+    /* Footer */
+
+    #footer{
+        margin-left: 70px;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    body{
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    /* Header */
+
+    header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 21px 0px;
+    }
+
+    nav{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #hébergnav,
+#actnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 53px;
+    margin-right: 0px;
+}
+
+#actnav a,
+#hébergnav a {
+    height: 53px;
+    width: 100%;
+}
+
+
+nav a:hover{
+    padding-bottom: 23px;
+    border-bottom-width: 187px;
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+    border-top: 0px;
+}
+
+h1{
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 21px;
+}
+
+#start h2 {
+    margin-bottom: 36px;
+    margin-left: 0px;
+}
+
+/* Section */
+
+section{
+    margin-left: 0px;
+}
+
+/* Formulaire */
+
+#formulaire{
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    width: 332px;
+}
+
+button{
+    width: 50px;
+    font-size: 0px;
+}
+
+button i{
+    visibility: visible;
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+#filtres{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 156px;
+    width: 100%;
+}
+
+#filtres h2{
+    margin-bottom: 15px;
+}
+
+#filtres ul{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 160px 160px ;
+    grid-template-rows: 50px 50px;
+    gap: 14px;
+    height: 120px;
+    width: 100%;
+    min-width: 375px;
+    margin-right: 0px;
+}
+
+#economique li, #romantique li{
+    position: relative;
+    right: 20px
+}
+
+#familial li{
+    position: relative;
+    right: 35px;
+}
+
+#animaux li{
+    position: relative;
+    right: 10px;
+}
+
+#economique, #familial, #romantique, #animaux{
+    width: 160px;
+    height: 50px;
+    margin-right: 14px;
+    font-size: 11px;
+    min-width: 160px;
+}
+
+#info{
+    margin-left: 20px;
+    height: 57px;
+    width: 100%;
+    margin-top: 41px;
+    margin-bottom: 19px;
+}
+
+ /* Block Cards */
+
+ #bigBlockCards{
+    margin-left: 0px;
+    flex-direction: column-reverse;
+ }
+
+ /* Populaires */
+
+ #populaires{
+    margin: 0px 0px;
+    width: 100%;
+    height: 580px;
+    border-radius: 0px;
+ }
+
+  #mostPop{
+    height: 454px;
+    flex-direction: column;
+    margin-top: 26px;
+  }
+
+  #card2{
+    width: 89%;
+  }
+
+  #infoPop h3{
+    font-size: 16px;
+  }
+
+  #infoPop p{
+    font-size: 14px;
+  }
+
+  /* Hébergement */
+
+ #cardConteiners{
+    margin: 0px 0px;
+    width: 100%;
+    height: 1400px;
+    background-color: #FFFFFF;
+    padding-top: 71px;
+ }
+
+ #cardTitle{
+    margin-bottom: 19px;
+ }
+
+ #cardConteiners a{
+    font-size: 0px;
+ }
+
+ #cardBlock{
+    height: 1254px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0px;
+ }
+
+ #card{
+    margin-top: 0px;
+    max-width: 89%;
+ }
+
+ #cardInfo{
+    height: 75px;
+ }
+
+ /* Activités */
+
+ #activités{
+    margin-left: 20px;
+    margin-top: 65px;
+    height: 935px;
+ }
+
+ #actCardConteiner{
+    flex-direction: column;
+    height: 935px;
+    align-items: center;
+    margin-right: 22px;
+ }
+
+ #actCard{
+    width: 89%;
+    height: 190px;
+ }
+
+ #actCardInfo{
+    height: 56px;
+    margin-left: 19px;
+    align-items: center;
+ }
+
+ #actCard img{
+    height: 134px;
+ }
+
+ /* Footer */
+
+ #footer{
+    width: 100%;
+    height: 501px;
+    margin-left: 0px;
+    margin-top: 105px;
+    flex-direction: column;
+    padding-left: 30px;
+ }
+
+ #footerList{
+    height: 30%;
+    padding-bottom: 15px;
+ }
+
+ #footerList h3{
+    margin-bottom: 10px;
+ }
+
+}
