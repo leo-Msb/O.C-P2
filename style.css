@@ -131,19 +131,19 @@ button {
 }
 
 button i{
-    visibility: hidden;
+    font-size: 0px;
 }
 
 /* Filtre */
+
 #filtres {
     display: flex;
-    max-width: 914px;
-    width: 90%;
+    max-width: 915px;
+    width: 100%;
     height: 50px;
     margin-left: 62px;
     margin-top: 32px;
     font-weight: 700;
-    color: black;
 }
 
 
@@ -154,15 +154,14 @@ h2 {
     margin-right: 30px;
 }
 
-ul {
+#blockFiltre {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 90%;
-    list-style-type: none;
+    width: 100%;
     font-size: 17px;
     font-weight: 700;
-    margin-right: 50px;
 }
 
 #economique {
@@ -174,7 +173,7 @@ ul {
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    margin-right: 50px;
+   /* margin-right: 50px;*/
     font-weight: 700;
 }
 
@@ -182,11 +181,11 @@ ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 110px;
+    width: 15%;
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
 }
 
 #romantique {
@@ -198,14 +197,14 @@ ul {
     height: 50px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
-    margin-right: 50px;
+    /*margin-right: 50px;*/
 }
 
 #animaux {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 29.93%;
+    width: 26%;
     min-width: 200px;
     height: 50px;
     border: 2px solid #D9D9D9;
@@ -216,7 +215,7 @@ ul {
     color: #0065FC;
 }
 
-ul #economique:hover,
+#economique:hover,
 #familial:hover,
 #romantique:hover,
 #animaux:hover {
@@ -262,14 +261,6 @@ a {
     height: 26px;
 }
 
-#cardBlock {
-    display: grid;
-    grid-template-columns: 30.32% 30.32% 30.32%;
-    gap: 30px;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
 #cardConteiners {
     width: 69%;
     height: 626px;
@@ -282,7 +273,15 @@ a {
 
 }
 
-#card {
+#cardBlock {
+    display: grid;
+    grid-template-columns: 30.32% 30.32% 30.32%;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.card {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -295,33 +294,33 @@ a {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
-#card img {
+.card img {
     object-fit: cover;
     width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
 }
 
-#cardInfo {
+.cardInfo {
     margin-left: 16px;
     align-items: center;
     height: 37%;
 }
 
-#cardInfo h3 {
+.cardInfo h3 {
     font-size: 16px;
     font-weight: 700;
     margin-top: 4px;
 }
 
-#cardInfo p {
+.cardInfo p {
     font-size: 14px;
     font-weight: 400;
     margin-top: 5px;
 
 }
 
-#cardInfo i {
+.cardInfo i {
     color: #0065FC;
     font-size: 12px;
 }
@@ -364,7 +363,7 @@ a {
     color: #0065FC;
 }
 
-#card2 {
+.card2 {
     width: 100%;
     min-width: 290px;
     display: flex;
@@ -376,18 +375,18 @@ a {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
-#card2 a{
+.card2 a{
     display: flex;
 }
 
-#card2 img {
+.card2 img {
     object-fit: cover;
     width: 40%;
     height: 100%;
     border-radius: 20px 0px 0px 20px;
 }
 
-#cardInfoPop {
+.cardInfoPop {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
@@ -396,28 +395,28 @@ a {
     height: 140px;
 }
 
-#cardInfoPop h3 {
+.cardInfoPop h3 {
     font-size: 16px;
     font-weight: 700;
     margin-top: 16px;
 }
 
-#cardInfoPop p {
+.cardInfoPop p {
     font-size: 14px;
     margin-top: 7px;
 }
 
-#cardInfoPop i {
+.cardInfoPop i {
     color: #0065FC;
 }
 
-#notePop {
+.notePop {
     height: 12px;
     margin-bottom: 12px;
     font-size: 12px;
 }
 
-#infoPop {
+.infoPop {
     display: flex;
     flex-direction: column;
     height: 120px;
@@ -454,7 +453,7 @@ a {
     margin-right: 50px;
 }
 
-#actCard {
+.actCard {
     display: flex;
     flex-direction: column;
     width: 23%;
@@ -466,26 +465,26 @@ a {
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
 }
 
-#actCard img {
+.actCard img {
     object-fit: cover;
     width: 100%;
     height: 87%;
     border-radius: 20px 20px 0px 0px;
 }
 
-#actCardInfo {
+.actCardInfo {
     font-size: 16px;
     font-weight: 700;
     padding-left: 19px;
 }
 
-#actCardInfo h3{
+.actCardInfo h3{
 height: 48px;
 display: flex;
 align-items: center;
 }
 
-#actCard a{
+.actCard a{
     
     height: 100%;
 }
@@ -503,7 +502,7 @@ align-items: center;
     padding: 45px;
 }
 
-#footerList {
+.footerList {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -556,7 +555,7 @@ align-items: center;
         margin-right: 12px;
     }
 
-    #filtres ul{
+    #fblockFiltre{
         width: 100%;
     }
 
@@ -581,11 +580,11 @@ align-items: center;
         margin: 0px 70px;
     }
 
-    #cardInfo h3{
+    .cardInfo h3{
         font-size: 14px;
     }
 
-    #cardInfo p{
+    .cardInfo p{
         font-size: 13px;
     }
 
@@ -615,22 +614,22 @@ align-items: center;
         height: 210px;
     }
 
-    #card2{
+    .card2{
         min-width: 130px;
         height: 138px;
         margin: 0px;
     }
 
-    #card2 img{
+    .card2 img{
         width: 42%;
     }
 
-    #infoPop h3{
+    .infoPop h3{
         margin-top: 12px;
         font-size: 14px;
     }
 
-    #infoPop p{
+    .infoPop p{
         font-size: 13px;
     }
 
@@ -648,15 +647,15 @@ align-items: center;
         width: 90%;
     }
 
-    #actCard{
+    .actCard{
         height: 267px;
     }
 
-    #actCardInfo{
+    .actCardInfo{
         padding-left: 12px;
     }
 
-    #actCard img{
+    .actCard img{
         height: 79%;
     }
 
@@ -751,7 +750,6 @@ button{
 }
 
 button i{
-    visibility: visible;
     color: #FFFFFF;
     font-size: 17px;
 }
@@ -769,7 +767,7 @@ button i{
     margin-bottom: 15px;
 }
 
-#filtres ul{
+#blockFiltre{
     display: grid;
     justify-content: center;
     grid-template-columns: 160px 160px ;
@@ -781,17 +779,17 @@ button i{
     margin-right: 0px;
 }
 
-#economique li, #romantique li{
+#economique a, #romantique a{
     position: relative;
     right: 20px
 }
 
-#familial li{
+#familial a{
     position: relative;
     right: 35px;
 }
 
-#animaux li{
+#animaux a{
     position: relative;
     right: 10px;
 }
@@ -834,15 +832,15 @@ button i{
     margin-top: 26px;
   }
 
-  #card2{
+  .card2{
     width: 89%;
   }
 
-  #infoPop h3{
+  .infoPop h3{
     font-size: 16px;
   }
 
-  #infoPop p{
+  .infoPop p{
     font-size: 14px;
   }
 
@@ -856,7 +854,7 @@ button i{
     padding-top: 71px;
  }
 
- #cardTitle{
+ .cardTitle{
     margin-bottom: 19px;
  }
 
@@ -873,12 +871,12 @@ button i{
     margin-bottom: 0px;
  }
 
- #card{
+ .card{
     margin-top: 0px;
     max-width: 89%;
  }
 
- #cardInfo{
+ .cardInfo{
     height: 75px;
  }
 
@@ -897,18 +895,18 @@ button i{
     margin-right: 22px;
  }
 
- #actCard{
+ .actCard{
     width: 89%;
     height: 190px;
  }
 
- #actCardInfo{
+ .actCardInfo{
     height: 56px;
     margin-left: 19px;
     align-items: center;
  }
 
- #actCard img{
+ .actCard img{
     height: 134px;
  }
 
@@ -923,13 +921,13 @@ button i{
     padding-left: 30px;
  }
 
- #footerList{
+ .footerList{
     height: 30%;
     padding-bottom: 15px;
  }
 
- #footerList h3{
+ .footerList h3{
     margin-bottom: 10px;
  }
-
+ 
 }
