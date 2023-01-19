@@ -1,0 +1,488 @@
+/* Media queries */
+
+@media screen and (max-width:992px) {
+
+    /* haut de page */
+
+    header{
+        margin-left: 72px;
+        margin-right: 72px;
+        width: 94%;
+    }
+
+    h1{
+        margin-left: 70px;
+    }
+
+    .start{
+        margin-left: 20px;
+        margin-top: 13px;
+    }
+
+
+    /* Section */
+
+    section{
+        margin-left: 18px;
+    }
+    
+    .filtres{
+        width: 90%;
+        margin-left: 52px;
+    }
+
+    .filtres h2{
+        margin-right: 12px;
+    }
+
+    .blockFiltre1{
+        width: 45%;
+    }
+
+    .blockFiltre2{
+        width: 55%;
+    }
+
+    .economique, .familial, .romantique, .animaux{
+        padding-right: 5px;
+    }
+
+    .economique{
+        width: 47%;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+
+    .familial{
+        width: 35%;
+        min-width: 98px;
+        margin-right: 10px;
+    }
+
+    .romantique{
+        width: 35%;
+        margin-right: 10px;
+    }
+
+    .animaux{
+        width: 52%;
+    }
+
+    /* Block Cards hébergement */
+
+    .bigBlockCards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* hébergement */
+    
+    .cardConteiner{
+        width: 90%;
+        margin: 0px 70px;
+    }
+
+    .cardInfo h3{
+        font-size: 14px;
+    }
+
+    .cardInfo p{
+        font-size: 13px;
+    }
+
+    /* Populaire */
+
+    .populaires{
+        width: 90%;
+        height: 278px;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 53px;
+    }
+
+    .titlePop{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 34px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .mostPop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        height: 210px;
+    }
+
+    .card2{
+        min-width: 130px;
+        width: 83.87%;
+        height: 138px;
+        margin: 0px;
+    }
+
+    .card2 img{
+        width: 45%;
+    }
+
+    .infoPop h3{
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    .infoPop p{
+        font-size: 13px;
+    }
+
+    /* Block activités */
+
+    .blockActivités{
+        height: 380px;
+        margin-top: 55px;
+        margin-bottom: 25px;
+        margin-left: 70px;
+    }
+
+    .actCardConteiner{
+        height: 301px;
+        width: 90%;
+    }
+
+    .actCard{
+        height: 267px;
+        width: 20%;
+        margin-top: 34px;
+    }
+
+    .actCardInfo{
+        padding-left: 12px;
+    }
+
+    .actCard img{
+        height: 79%;
+    }
+
+    /* Footer */
+
+    .footer{
+        margin-left: 70px;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+body{
+        width: 100%;
+        margin: 0px 0px;
+    }
+
+    /* Header */
+
+header{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 21px 0px;
+    }
+
+nav{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+.hébergnav,
+.actnav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 53px;
+    margin-right: 0px;
+}
+
+.actnav a,
+.hébergnav a {
+    height: 53px;
+    width: 100%;
+}
+
+
+nav a:hover{
+    border-bottom-width: 187px;
+    color: #0065fc;
+    border-bottom: 3px solid #0065fc;
+    border-top: 0px;
+}
+
+h1{
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 41px;
+}
+
+.start h2 {
+    margin-bottom: 36px;
+    margin-left: 0px;
+}
+
+/* Section */
+
+section{
+    margin-left: 0px;
+}
+
+/* Formulaire */
+
+.formulaire{
+    margin-left: 0px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 0px 20px
+}
+
+form{
+    max-width: 332px;
+}
+
+input{
+    width: 80%;
+    max-width: 232px;
+
+}
+
+button{
+    width: 50px;
+    font-size: 0px;
+}
+
+button i{
+    color: #FFFFFF;
+    font-size: 17px;
+}
+
+.filtres{
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 156px;
+    width: 99%;
+}
+
+.filtres h2{
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.blockFiltre1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 17px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.blockFiltre2{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.economique i, .familial i, .romantique i, .animaux i{
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.economique, .familial, .romantique, .animaux{
+    height: 50px;
+    font-size: 11px;
+    width: 160px;
+    min-width: 140px;
+    justify-content: flex-start;
+    padding-left: 7px;
+    margin-left: 0px;
+}
+
+.familial{
+    margin-right: 0px;
+}
+
+.economique{
+    margin-right: 14px;
+}
+
+.romantique{
+    margin-right: 14px;
+}
+
+.info{
+    margin-left: 20px;
+    height: 57px;
+    width: 95%;
+    margin-top: 41px;
+    margin-bottom: 25px;
+}
+
+ /* Block Cards */
+
+ .bigBlockCards{
+    margin-left: 0px;
+    flex-direction: column-reverse;
+    width: 100%;
+ }
+
+ /* Populaires */
+
+ .populaires{
+    margin: 0px 0px;
+    width: 100%;
+    height: 580px;
+    border-radius: 0px;
+ }
+
+ .titlePop{
+    margin-left: 20px;
+ }
+
+ .titlePop h2{
+    font-size: 22px;
+ }
+
+ .titlePop i{
+    font-size: 18px;
+ }
+
+  .mostPop{
+    height: 454px;
+    flex-direction: column;
+    margin-top: 26px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0px 20px;
+  }
+
+  .card2{
+    width: 100%;
+  }
+
+  .cardInfoPop {
+    width: 59%;
+  }
+
+  .infoPop h3{
+    font-size: 16px;
+  }
+
+  .infoPop p{
+    font-size: 14px;
+  }
+
+  /* Hébergement */
+
+ .cardConteiner{
+    margin: 0px 0px;
+    width: 100%;
+    height: 1400px;
+    background-color: #FFFFFF;
+    padding-top: 26px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+ .cardTitle{
+    margin-bottom: 19px;
+    font-size: 22px;
+ }
+
+ .cardConteiner a{
+    font-size: 0px;
+ }
+
+ .cardBlock{
+    height: 1254px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0px;
+ }
+
+ .card{
+    margin-top: 0px;
+    max-width: 100%;
+ }
+
+ .cardInfo{
+    height: 75px;
+ }
+
+ /* Activités */
+
+ .blockActivités{
+    align-items: center;
+    margin-top: 65px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    padding: 0px 20px;
+    height: 935px;
+    width: 100%;
+ }
+
+ .blockActivités h2{
+    font-size: 22px;
+ }
+
+ .actCardConteiner{
+    flex-direction: column;
+    height: 935px;
+    width: 100%;
+    align-items: center;
+    margin-right: 0px;
+    justify-content: flex-start;
+ }
+
+ .actCard{
+    width: 100%;
+    height: 190px;
+ }
+
+ .actCardInfo{
+    height: 56px;
+    margin-left: 19px;
+    align-items: center;
+ }
+
+ .actCard img{
+    height: 134px;
+ }
+
+ /* Footer */
+
+ .footer{
+    width: 100%;
+    height: 501px;
+    margin-left: 0px;
+    margin-top: 85px;
+    flex-direction: column;
+    padding-left: 30px;
+ }
+
+ .footerList{
+    height: 30%;
+    padding-bottom: 15px;
+ }
+
+ .footerList h3{
+    margin-bottom: 10px;
+ }
+
+}
