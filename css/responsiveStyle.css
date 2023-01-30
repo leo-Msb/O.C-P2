@@ -80,6 +80,7 @@
     .cardConteiner{
         width: 90%;
         margin: 0px 70px;
+        min-width: 0px;
     }
 
     .cardInfo h3{
@@ -88,6 +89,18 @@
 
     .cardInfo p{
         font-size: 13px;
+    }
+
+    .card {
+        margin-right: 0px;
+    }
+
+    .cardTitle{
+        margin-left: 0px;
+    }
+
+    #hébergements{
+        font-size: 22px;
     }
 
     /* Populaire */
@@ -153,11 +166,13 @@
     .actCard{
         height: 267px;
         width: 20%;
+        min-width: 145px;
         margin-top: 34px;
     }
 
     .actCardInfo{
         padding-left: 12px;
+        font-size: 16px;
     }
 
     .actCard img{
@@ -367,6 +382,7 @@ button i{
     margin-right: 0px;
     margin-left: 0px;
     padding: 0px 20px;
+    gap: 12px;
   }
 
   .card2{
@@ -390,7 +406,7 @@ button i{
  .cardConteiner{
     margin: 0px 0px;
     width: 100%;
-    height: 1400px;
+    height: 1460px;
     background-color: #FFFFFF;
     padding-top: 26px;
     padding-left: 20px;
@@ -398,30 +414,44 @@ button i{
  }
 
  .cardTitle{
-    margin-bottom: 19px;
     font-size: 22px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 0px;
  }
+
 
  .cardConteiner a{
     font-size: 0px;
  }
 
- .cardBlock{
+ .cardBlock1, .cardBlock2{
     height: 1254px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 12px;
-    margin-bottom: 0px;
+ }
+
+ .cardBlock1 {
+    margin-bottom: 12px;
+    margin-top: 19px;
  }
 
  .card{
     margin-top: 0px;
-    max-width: 100%;
+    width: 100%;
+    margin-right: 0px;
  }
 
  .cardInfo{
     height: 75px;
+    padding-top: 4px;
+ }
+
+ .cardInfo h3 {
+    font-size: 16px;
  }
 
  /* Activités */
